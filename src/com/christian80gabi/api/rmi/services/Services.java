@@ -8,7 +8,7 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.List;
 
-public class Services extends UnicastRemoteObject {
+public class Services extends UnicastRemoteObject implements ProductServices {
     ProductServices service = new ProductDao();
 
     public Services() throws RemoteException {
